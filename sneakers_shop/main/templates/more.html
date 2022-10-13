@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} index {% endblock %}
+{% block content %}
+
+
+<div class="container">
+    <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{{more.image.url}}" class="card-img-top " style="background-size:cover" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title  mb-5">
+                        {{more.title}}
+                    </h5>
+                    <p class="card-text mb-5">{{more.description}}</p>
+                    <p class="card-text mb-5"><small class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque perspiciatis alias laborum nisi optio ipsam obcaecati neque nesciunt autem ex.</small></p>
+                    <a href="" class="btn btn-primary mb-3">{{more.price}} $</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
